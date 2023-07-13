@@ -1,0 +1,42 @@
+
+.container{
+    padding: 2% 11%;
+}
+.section-heading{
+    font-size: 4rem;
+    color: $secondary;
+}
+.cards-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 3rem;
+    .card{
+        @extend .flex-col-center;
+        svg{
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            color: $light-blue;
+            text-align: center;
+        }
+        background: $secondary;
+        padding: 4rem;
+       border-radius: .6rem;
+    }
+    h3{
+        color :#f7f7f7;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cards-container{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+}

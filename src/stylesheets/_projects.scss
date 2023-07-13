@@ -1,0 +1,88 @@
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  .project-section {
+    padding: 0;
+    .project-wrapper {
+      padding: 2% 11%;
+    }
+  }
+  
+  .project-card {
+    padding: 2rem;
+    border-radius: 0.6rem;
+    color: $secondary;
+    border: 0.1rem solid #ddd;
+    figure {
+      img {
+        width: 100% !important;
+        border-radius: 0.3rem;
+      }
+    }
+    h3 {
+      font-size: 2.8rem;
+      color: $secondary;
+    }
+    p {
+      margin: 1.2rem 0;
+      font-size: 1.8rem;
+      color: gray;
+      font-weight: 500;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin-top: 1rem;
+      svg {
+        color: rgba(0, 98, 185, 0.8);
+        font-size: 3rem;
+        margin: 0 2rem;
+      }
+    }
+  }
+  
+  .getlatest-projects {
+    background: linear-gradient(rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)),
+      url("../../public/images/common-bg.svg");
+    background-size: cover;
+    padding: 6% 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      font-size: 3.6rem;
+      color: #fff;
+      font-family: $Sourcesans;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+    }
+    button {
+      background: $white;
+      a{
+        color : $secondary;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .project-container {
+      grid-template-columns: 1fr;
+    }
+    .project-section{
+      .project-wrapper{
+        padding: 0rem !important ;
+      }
+    }
+    .getlatest-projects {
+      padding: 6rem 11% !important;
+      h2 {
+        text-align: center;
+      }
+    }
+  }

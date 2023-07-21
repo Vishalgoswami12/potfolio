@@ -8,7 +8,7 @@ function ProjectCard(props) {
   return (
     <article className="project-card">
       <figure>
-        <img src={`/images/${image}`} alt="project" />
+        <img src={`/Images/${image}`} alt="project" />
       </figure>
       <h3 className="card-heading">{title}</h3>
       <p>{description}</p>
